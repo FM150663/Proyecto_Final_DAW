@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><!--Inicio de la cabecera-->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/estilo1.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo2.css">
+        <link rel="icon" type="image/png" href="img/Fvicon.ico">
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">        
+        <link href="css/estilos.css" type="text/css" rel="stylesheet">
+        <title>Crear Linea</title><!--Titulo del sitio-->
+        
+    </head>
+    <body><!--Inicio del cuerpo-->
+                <header><!--Inicio del encabezado-->
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+                        <span class="sr-only">Desplegar / Ocultar Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Inicia Menu -->
+                <div class="collapse navbar-collapse" id="navegacion-fm">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="active"><a href="crear-linea.html">Crear línea del tiempo</a></li>
+                        <li><a href="contactanos.html">Contáctenos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="jumbotron">
+        <div class="container">
+            <h1>Haz lineas de tiempo gratis</h1>
+            <p>Creacion de lineas del tiempo.</p>
+        </div>
+    </section> 
+    <div id="formulario">
+            <form name="form1" id="form1">
+                <h1>Ingreso de datos</h1>
+                <label>Ingrese el rango de fecha para trabajar la linea del tiempo (Ingrese solo el año):</label>
+                <br>
+                <label>
+                   De:<input type="text" id="txtrangoini"><br>
+                    <span class="error"></span>
+                    Hasta:<input type="text" id="txtrangofin">
+                    <span class="error"></span>
+                </label>
+                <br>
+                <input type="button" id="btndefinirrango" value="Definir el rango"><br>
+            </form>
+            </div>
+            <br>
+            <div id="formulario2">
+            <form id="form2">
+                <label>Fecha del acontecimiento:</label>
+                <input type="text" id="fecha"><br>
+                <span class="error"></span>
+                <label>Ingrese el titulo del acontecimiento:</label>
+                <input type="text" id="titulo"><br>
+                <span class="error"></span>
+                <label>Ingrese una descripcion para el acontecimiento:</label><br>
+                <textarea id="descripcion"></textarea>
+                <span class="error"></span>
+                 <input type="button" id="nuevo" value="Nuevo">
+                <input type="button" id="finalizar" value="Finalizar">
+               
+               <!--Espacion reservado para agregar la imagen-->
+            </form>
+        </div>
+        <div id="linea">
+        
+        </div>
+                <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <small>All rights reserved</small>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="list-inline text-right">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="crear-linea.html">Crear línea del tiempo</a></li>
+                        <li><a href="contactanos.html">Contáctenos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script type="text/javascript" src="js/ocultarymostrar.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/guardardatos.js"></script>
+    </body><!--Inicio del cuerpo-->
+</html>

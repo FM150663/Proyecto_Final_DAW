@@ -1,0 +1,160 @@
+h1{
+	color: white;
+	text-align: justify;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+#form1{
+	letter-spacing: 0.5px;
+	color: white;
+	margin: auto;
+	width: 490px;
+	background: rgba(0,0,0,0.8);
+	padding: 15px 45px; /* 20px se va dentro del form*/
+	border-radius: 7px;
+	margin-top: 2px;
+}
+
+
+label {
+    font-size: 17pt;
+    margin-top: 2px;
+}
+
+
+
+#txtrangoini, #txtrangofin{
+	background-color: white;
+	color: black;
+	width: 166%;
+	margin-bottom: 10px;
+	padding: 7px;
+	font-size: 17px;
+	border: none;
+}
+
+
+#btndefinirrango{
+	margin-bottom: 10px;
+	width: 100%;
+	background: #31384A;
+	color: white;
+	padding: 20px;
+	font-size: 21px;
+
+}
+
+#btndefinirrango:hover{
+cursor: pointer;
+}
+
+/* -- Media Querie -- */
+
+@media (max-width:799px) {
+h1{
+	color: white;
+	margin: 0;    
+	font-size: 150%;
+	margin-bottom: 15px;
+}
+
+	label {
+    font-size: 11pt;
+    margin-top: -2px;
+	}
+
+#txtrangoini, #txtrangofin{
+	width: 232%;
+	margin-bottom: 7px;
+	padding: 3px;
+	font-size: 14px;
+}
+
+
+#btndefinirrango{
+    margin-top: 1.3px;
+	padding: 10px;
+    font-size: 15pt;
+
+}
+} 
+
+
+@media (min-width: 520px) and (max-width: 619px) {
+h1{
+    font-size: 160%;
+}
+
+	label {    
+		font-size: 12pt;
+    margin-top: -2px;
+	}
+
+#txtrangoini, #txtrangofin{
+	margin-bottom: 9px;
+	padding: 4px;
+	font-size: 14px;
+}
+
+
+#btndefinirrango{
+    margin-top: 1.3px;
+	padding: 12px;
+    font-size: 16pt;
+
+}
+}
+
+@media (min-width:520px) and (max-width: 799px) { 
+h1{
+    font-size: 175%;
+}
+
+	label {    
+    font-size: 14pt;
+    margin-top: -2px;
+	}
+
+#txtrangoini, #txtrangofin{
+	margin-bottom: 9px;
+	padding: 4px;
+	font-size: 17px;
+	width: 177%;
+}
+
+
+#btndefinirrango{
+    margin-top: 1px;
+	padding: 12px;
+    font-size: 17pt;
+
+}
+}
+
+@media (min-width:799px) and (max-width: 1200px) { 
+h1{
+    font-size: 175%;
+}
+
+	label {    
+		font-size: 16pt;
+    margin-top: -2px;
+	}
+
+#txtrangoini, #txtrangofin{
+	margin-bottom: 10px;
+	padding: 5px;
+	font-size: 20px;
+	width: 156%;
+}
+
+
+#btndefinirrango{
+    margin-top: 1px;
+	padding: 12px;
+    font-size: 18pt;
+
+}
+}
