@@ -1,5 +1,5 @@
 //Contadores de alcanze global
-var correcto = false; //verifica que los datos estén ingresados correctamente
+var correcto = false; //verifica que los datos del formulario2 estén ingresados correctamente
 var i = 0;
 var aux=0;
 //crear arreglos que contendran nodos de texto
@@ -10,6 +10,7 @@ var aux=0;
        nodos[cont] = new Array(3); 
     }
 
+//Arreglos usados para dinamizar el JSON
 var fechaact = new Array(10);
 var tituloact = new Array(10);
 var descact = new Array(10);
@@ -18,6 +19,8 @@ var descact = new Array(10);
 
 /* funcion guardar*/
 function guardar(){
+    
+    //se carturan los valores de los texbox y se asignan a la pocisión actual en los arreglos
     fechaact[i] = document.getElementById("fecha").value;
     tituloact[i] = document.getElementById("titulo").value;
     descact[i] = document.getElementById("descripcion").value;
@@ -72,16 +75,19 @@ var datos =
             ]
         };
     /*Fin JSON*/
+    
+    //posiciones de arreglos los cuales son convertidos en nodos de texto
     fechaslimite[0] = document.createTextNode(datos.fechas[0].fecha1);
     fechaslimite[1] = document.createTextNode(datos.fechas[1].fecha2); 
    //crear nodos de texto
 
-    
+    //se le asigna a cada posición del arreglo bidimensional el valor de cada dato perteneciente al acontecimiento que se está ingresando
     nodos[i][0] = document.createTextNode(datos.acontecimientos[i].tituloact);
     nodos[i][1] = document.createTextNode(datos.acontecimientos[i].fechaact);
     nodos[i][2] = document.createTextNode(datos.acontecimientos[i].descripcion);
     //actualizar contador
      
+    
     if(i==9){
         crearlinea();
     }
@@ -99,9 +105,6 @@ var datos =
 function crearlinea(){
     if(i !=0){
     document.getElementById("formulario2").style.display = 'none';
-    var li = document.getElementsByTagName("li");
-    li[1].style.backgroundColor = 'black';
-    li[1].style.Color = '#fff';
     var parrafos = new Array(30);
     var div = new Array(10);
     //imprimir nodos de texto
